@@ -1,3 +1,3 @@
 # Loading Bar With css
 
- Demo page: [Click-Here](LoadingBarcss.surge.sh)
+ Demo page: [Here](http://LoadingBarcss.surge.sh "Here")
