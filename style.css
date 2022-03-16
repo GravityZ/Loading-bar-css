@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+body{
+    background: linear-gradient(65deg, #000000, #585858);
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.bar-conteiner{
+    width: 300px;
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.bar{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to left, #4169e1, #69b0f8);
+    animation-name: progres;
+    animation-duration: 7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes progres{
+    0%{width: 30px;}
+    20%{width: 50px;}
+    40%{width: 80px;}
+    60%{width: 120px;}
+    80%{width: 200px;}
+    100%{width: 100%;}
+}
+
+h2::after{
+    content: ".";
+    animation-name: point;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes point{
+    0%{content: "";}
+    20%{content: ".";}
+    40%{content: "." ".";}
+}
