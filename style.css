@@ -45,14 +45,14 @@ header{
 }
 
 h2::after{
-    content: ".";
+    content: "";
     animation-name: point;
     animation-duration: 2s;
     animation-iteration-count: 4;
 }
 
 @keyframes point{
-    0%{content: "";}
-    20%{content: ".";}
-    40%{content: "." ".";}
+    0%{content: ".";}
+    20%{content: "." ".";}
+    40%{content: "." "." ".";}
 }
