@@ -29,10 +29,12 @@ header{
 .bar{
     width: 100%;
     height: 100%;
-    background:linear-gradient(to left, #4169e1, #69b0f8);
+    background:#fff;
+    box-shadow: 0px 0px 25px 0 #fff;
     animation-name: progres;
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
 
 @keyframes progres{
@@ -44,11 +46,15 @@ header{
     100%{width: 100%;}
 }
 
+h2{
+    text-shadow: 0px 0px 5px #fff;
+}
+
 h2::after{
     content: "";
     animation-name: point;
     animation-duration: 2s;
-    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
 }
 
 @keyframes point{
